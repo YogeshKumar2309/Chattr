@@ -39,9 +39,9 @@ export default function Landing() {
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
        <Logo logoType={LogoType.full}/>
 
-        <Link href="/friends" className="inline-flex items-center gap-2 rounded-full bg-black/25 px-4 py-2 text-sm hover:bg-black/40">
+        {/* <Link href="/friends" className="inline-flex items-center gap-2 rounded-full bg-black/25 px-4 py-2 text-sm hover:bg-black/40">
           <Users size={16} /> Friends
-        </Link>
+        </Link> */}
       </header>
 
       <main className="mx-auto grid max-w-6xl items-center gap-10 px-6 pb-16 pt-6 lg:grid-cols-[1.1fr_.9fr] lg:pt-14">

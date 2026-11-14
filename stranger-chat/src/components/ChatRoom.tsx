@@ -387,13 +387,13 @@ export default function ChatRoom({
             <span className="tabular-nums">{online}</span>
             <span className="hidden sm:inline">online</span>
           </span>
-          <Link
+          {/* <Link
             href="/friends"
             className="inline-flex items-center gap-1.5 rounded-full bg-panel px-2.5 py-1.5 hover:bg-panel2 sm:gap-2 sm:px-3"
           >
             <Users size={15} />
             <span className="hidden xs:inline">Friends</span>
-          </Link>
+          </Link> */}
         </div>
       </header>
 
@@ -608,13 +608,13 @@ export default function ChatRoom({
             )}
             {connected && kind === "random" && (
               <div className="ml-auto flex gap-1.5">
-                <button
+                {/* <button
                   onClick={addFriend}
                   title="Send friend request"
                   className="inline-flex items-center gap-1 rounded-full bg-mint px-3 py-2 text-xs font-medium text-deep hover:brightness-110"
                 >
                   <UserPlus size={14} /> Add
-                </button>
+                </button> */}
                 <button onClick={report} aria-label="Report user" className="rounded-full bg-panel2 p-2 hover:bg-panel2/70">
                   <Flag size={16} />
                 </button>
