@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="64" height="64">
+  <defs>
+    <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="50%" stop-color="#8A2BE2" />
+      <stop offset="100%" stop-color="#FF007F" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Optional Rounded Square (Transparent / Dark Safe) -->
+  <rect width="200" height="200" rx="45" fill="#090717" />
+
+  <!-- Left Chat Bubble -->
+  <path d="M45 55 H105 A22 22 0 0 1 127 77 V102 A22 22 0 0 1 105 124 H67 L45 142 V77 A22 22 0 0 1 45 55 Z" fill="url(#favGrad)" />
+  
+  <!-- Right Overlapping Chat Bubble -->
+  <path d="M95 82 H145 A20 20 0 0 1 165 102 V122 A20 20 0 0 1 145 142 H135 L150 156 V142 H95 A20 20 0 0 1 75 122 V102 A20 20 0 0 1 95 82 Z" fill="#FFFFFF" opacity="0.95" />
+
+  <!-- Connection Dots -->
+  <circle cx="105" cy="112" r="5" fill="#00D2FF" />
+  <circle cx="122" cy="112" r="5" fill="#9D00FF" />
+  <circle cx="139" cy="112" r="5" fill="#FF007F" />
+
+  <!-- Signature Swoosh Arc -->
+  <path d="M40 168 Q100 150 160 168 Q100 158 40 168 Z" fill="url(#favGrad)" />
+</svg>

@@ -6,6 +6,9 @@ import gsap from "gsap";
 import { ArrowRight, ShieldCheck, Users } from "lucide-react";
 import ModePicker, { type Mode } from "./ModePicker";
 import AgeCheck, { AGE_KEY } from "./AgeCheck";
+import Logo, { LogoType } from "./Logo";
+import ChattrMatchHero from "@/components/ChattrMatchHero";
+import Footer from "./Footer";
 
 export default function Landing() {
   const router = useRouter();
@@ -29,16 +32,13 @@ export default function Landing() {
     return () => ctx.revert();
   }, []);
 
+
+
   return (
-    <div ref={root} className="min-h-dvh bg-cobalt text-ink">
+ <div ref={root} className="min-h-dvh overflow-x-clip bg-cobalt text-ink">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-        <span className="inline-flex items-center gap-2 font-display text-xl font-extrabold">
-          <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden>
-            <circle cx="9" cy="15" r="6" fill="#ff7aa8" />
-            <circle cx="21" cy="15" r="6" fill="#7ef2c8" fillOpacity=".9" />
-          </svg>
-          stranger
-        </span>
+       <Logo logoType={LogoType.full}/>
+
         <Link href="/friends" className="inline-flex items-center gap-2 rounded-full bg-black/25 px-4 py-2 text-sm hover:bg-black/40">
           <Users size={16} /> Friends
         </Link>
@@ -74,23 +74,22 @@ export default function Landing() {
           </div>
         </section>
 
-        <section aria-hidden className="mx-auto w-full max-w-md">
-          <svg viewBox="0 0 400 400" className="w-full">
-            <circle className="pulse" cx="200" cy="200" r="40" fill="none" stroke="#f4f2ff" strokeWidth="2" />
-            <path className="link-path" d="M95 120 C 190 150, 210 260, 305 290" fill="none" stroke="#f4f2ff" strokeWidth="3" strokeLinecap="round" />
-            <circle className="dot-a" cx="95" cy="120" r="44" fill="#ff7aa8" />
-            <circle className="dot-b" cx="305" cy="290" r="56" fill="#7ef2c8" />
-          </svg>
-        </section>
+
+
+     <div className="flex min-w-0 items-center justify-center">
+  <ChattrMatchHero />
+</div>
       </main>
 
-      <footer className="mx-auto flex max-w-6xl items-start gap-3 px-6 pb-10 text-sm text-ink/75">
+      {/* <footer className="mx-auto flex max-w-6xl items-start gap-3 px-6 pb-10 text-sm text-ink/75">
         <ShieldCheck size={18} className="mt-0.5 shrink-0" />
         <p className="max-w-2xl">
           Messages sirf dono browsers mein 24 ghante tak rehte hain, phir apne aap delete ho jate hain. Kisi ko bhi
           report ya block kar sakte ho. Video chat mein apni personal jaankari share mat karo.
         </p>
-      </footer>
+      </footer> */}
+
+      <Footer/>
     </div>
   );
 }
