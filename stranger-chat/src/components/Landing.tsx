@@ -67,9 +67,9 @@ export default function Landing() {
               >
                 Chat shuru karo <ArrowRight size={20} />
               </button>
-              <Link href="/friends" className="text-sm underline underline-offset-4 hover:text-white">
+              {/* <Link href="/friends" className="text-sm underline underline-offset-4 hover:text-white">
                 Friend ID banao
-              </Link>
+              </Link> */}
             </div>
           </div>
         </section>
