@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, DM_Sans } from "next/font/google";
-// @ts-expect-error CSS module has no declaration file.
 import "./globals.css";
 
 const display = Bricolage_Grotesque({
